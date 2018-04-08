@@ -1,0 +1,122 @@
+.hey,.ready
+{
+  text-align:justify;
+  margin-top:16px;
+}
+.ready
+{
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ padding:30px;
+ padding-bottom:4px;
+ margin-bottom:16px;
+}
+.ticket,.apply,.loadMore
+{
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius:40px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.loadMore
+{ 
+  color:black;
+   padding:15px;
+   margin-top:16px;
+}
+.ticket
+{
+    background-color: rgba(255,0,32,1);
+}
+.apply
+{
+    background-color: rgba(0,32,255,1);
+}
+.buttons,.ticketButton
+{
+  text-align:center;
+}
+.hack
+{
+  background-color:rgba(0,0,0,0.08);
+}
+.winners
+{
+  text-align:center;
+  font-family: 'Aclonica';
+  margin-top:16px;
+}
+.imageWin
+{
+  height:80px;
+  width:80px;
+}
+.imageText
+{
+  text-align:center;
+}
+.hackthon{
+  display: flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.hackthon>div 
+{
+  margin:40px;
+}
+.hackText
+{
+  text-align:center;
+}
+.quotes
+{
+  text-align:center;
+  clear:both;
+}
+.famousWords
+{
+  height:80px;
+  width:80px;
+}
+.headMentors
+{
+  font-size:35px;
+  text-align:center;
+  font-family: 'Aclonica';
+  margin-bottom:10px;
+}
+.speakers{
+  display: flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.speakerImages
+{
+  height:180px;
+  width:170px;
+}
+.text
+{
+  font-size:15px;
+  line-height: 24px;
+}
+.hide
+{
+  display:none;
+}
+#ticketEmail
+{
+  display:none;
+  margin-left:10px;
+  width:200px;
+}
+#submit
+{
+  display:none;
+  background-color:lightblue;
+}
