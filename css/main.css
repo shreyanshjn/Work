@@ -5,7 +5,7 @@
 }
 .ready
 {
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ box-shadow: 0 25px  25px 0px rgba(0, 0, 0, 0.2);
  padding:30px;
  padding-bottom:4px;
  margin-bottom:16px;
@@ -31,11 +31,30 @@
 }
 .ticket
 {
+    background-color: rgb(82, 0, 204);
+}
+.loadMore:hover
+{
     background-color: rgba(255,0,32,1);
+    color:white;
+    transition: background-color  1s;
+}
+.ticket:hover
+{
+    background-color: rgba(255,0,32,1);
+    color:white;
+    transition: background-color  1s;
 }
 .apply
 {
-    background-color: rgba(0,32,255,1);
+    background-color: rgba(255,0,32,1);
+}
+  
+.apply:hover
+{
+    background-color: rgb(82, 0, 204);
+    color:white;
+    transition: background-color  2s;
 }
 .buttons,.ticketButton
 {
@@ -44,6 +63,7 @@
 .hack
 {
   background-color:rgba(0,0,0,0.08);
+  margin-top:25px;
 }
 .winners
 {
@@ -53,8 +73,8 @@
 }
 .imageWin
 {
-  height:80px;
-  width:80px;
+  height:150px;
+  width:150px;
 }
 .imageText
 {
@@ -67,7 +87,7 @@
 }
 .hackthon>div 
 {
-  margin:40px;
+  margin:20px 80px 20px 80px;
 }
 .hackText
 {
@@ -77,12 +97,25 @@
 {
   text-align:center;
   clear:both;
+  margin-top:30px;
 }
 .famousWords
 {
-  height:80px;
-  width:80px;
+  height:150px;
+  width:150px;
+  float:left;
+  border-radius:150px;
 }
+.famousWords:hover
+{
+  height:150px;
+  width:150px;
+  float:left;
+  border-radius:150px;
+  opacity:0.2;
+  cursor:pointer;
+}
+
 .headMentors
 {
   font-size:35px;
@@ -99,10 +132,17 @@
 {
   height:180px;
   width:170px;
+  filter: grayscale(100%);
 }
-.text
+.speakerImages:hover
 {
-  font-size:15px;
+  height:180px;
+  width:170px;
+  filter: grayscale(0%);
+}
+.content
+{
+  font-size:18px;
   line-height: 24px;
 }
 .hide
@@ -111,12 +151,30 @@
 }
 #ticketEmail
 {
-  display:none;
   margin-left:10px;
   width:200px;
 }
 #submit
 {
-  display:none;
   background-color:lightblue;
+}
+.details
+{
+  display:none;
+}
+.capitalImage
+{
+   width:160px;
+   height:160px;
+   filter: grayscale(100%);
+}
+.capitalImage:hover
+{
+   width:160px;
+   height:160px;
+   filter: grayscale(0%);
+}
+.quotesHead
+{
+ margin-top:25px;
 }
