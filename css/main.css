@@ -73,6 +73,7 @@
 }
 .imageWin
 {
+  position:relative;
   height:150px;
   width:150px;
 }
@@ -87,7 +88,7 @@
 }
 .hackthon>div 
 {
-  margin:20px 80px 20px 80px;
+  margin:20px 60px 20px 60px;
 }
 .hackText
 {
@@ -103,16 +104,14 @@
 {
   height:150px;
   width:150px;
-  float:left;
   border-radius:150px;
 }
 .famousWords:hover
 {
   height:150px;
   width:150px;
-  float:left;
   border-radius:150px;
-  opacity:0.2;
+  opacity:0.8;
   cursor:pointer;
 }
 
@@ -152,11 +151,13 @@
 #ticketEmail
 {
   margin-left:10px;
-  width:200px;
+  width:300px;
 }
 #submit
 {
-  background-color:lightblue;
+  background-color:green;
+  color:white;
+  margin-left:4px;
 }
 .details
 {
@@ -164,17 +165,80 @@
 }
 .capitalImage
 {
-   width:160px;
-   height:160px;
+   width:150px;
+   margin:12px;
+   height:150px;
    filter: grayscale(100%);
 }
 .capitalImage:hover
 {
-   width:160px;
-   height:160px;
+   width:150px;
+   height:150px;
    filter: grayscale(0%);
 }
 .quotesHead
 {
  margin-top:25px;
+}
+.numbers
+{
+  width:20px;
+  height:20px;
+  position:absolute;
+}
+.main {
+  position: relative;
+}
+
+
+.over {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.main:hover .over {
+  opacity: 1;
+}
+
+.inside {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.vertical {
+    border-left: 1px solid black;
+    height: 160px;
+}
+.socialIcons
+{
+  font-size:40px;
+  text-align: center;
+  text-decoration: none; 
+  padding:0px;
+}
+.facebook,.linkedin
+{
+  color:blue;
+}
+.instagram
+{
+  color:#ff4d4d;
+}
+.footer
+{
+  position:fixed;
+  right:0px;
+  top:50%;
+  text-align:center;
+  margin-top:16px;
 }

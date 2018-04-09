@@ -1,6 +1,7 @@
 <!Doctype html>
 <html>
 <head>
+<title>ARP</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <!--icons-->
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
@@ -12,6 +13,7 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="js/code.js"></script>
 <!--css files-->
 <link rel="stylesheet" href="css/main.css">
 </head>
@@ -37,6 +39,10 @@
     <li class="nav-item">
       <a class="nav-link heading" href="">Investors</a>
     </li>
+    <li class="nav-item">
+      <a class="nav-link heading" href="">More</a>
+    </li>
+
    </ul>
   </div>
 </div>
@@ -49,8 +55,8 @@
     <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut quam imperdiet, rutrum erat at, fermentum lorem. Etiam vel ultrices tellus. Morbi laoreet, ipsum vitae commodo lobortis, ipsum libero efficitur diam, quis pretium felis justo at libero. Suspendisse at sollicitudin dolor, et congue leo. Aliquam ultricies orci lacinia ligula semper, eget vulputate metus laoreet. Nullam sit amet feugiat mauris, quis iaculis ligula. In ac nulla eget velit semper dictum id eu est. Curabitur tristique lacus sit amet erat condimentum condimentum. Nam consequat turpis in consectetur pulvinar. Duis posuere enim fermentum lacus dictum auctor. Vestibulum scelerisque ac diam sed bibendum. Morbi dignissim efficitur sem id imperdiet. Proin ornare lorem urna, ut finibus velit finibus a. Suspendisse maximus odio vel sapien elementum feugiat.</p>
 <br><h3>6-8 April<br>IIT ROORKEE </h3>
    <p class="ticketButton"><button class="button ticket">Ticket Request</button>
-   <span><form action='' method="get" class="details">
-   <input id="ticketEmail" required placeholder="Enter Your email" type="email"><input id="submit" type="submit" value="Done">
+   <span><form action="" method="get" class="details" name="myform" onsubmit="return validateForm()">
+   <input id="ticketEmail"  placeholder="Enter Your email" name="email" type="text"><input id="submit"  type="submit" value="Done">
   <span></form>
    </p>
   </div> 
@@ -73,14 +79,23 @@
    </div>
  </div>
      <div class="flex-container hackthon">
-         <div> <img src="css/img/udemy.jpeg" style="filter:grayscale(100%)" class="imageWin">
+         <div class="main">
+         <img src="css/img/udemy.jpeg" style="filter:grayscale(100%)" class="imageWin">
+         <div class="over"><div class="inside"> <img src="css/img/one.png"  class="numbers"></div></div>
          <p class="hackText">Ramesh</p>
          </div>
-         <div> <img src="css/img/sample.jpeg" class="imageWin">
+         <div class="vertical"></div>
+ 
+         <div class="main">
+         <img src="css/img/sample.jpeg" style="filter:grayscale(100%)" class="imageWin">
+         <div class="over"><div class="inside"> <img src="css/img/two.jpeg"  class="numbers"></div></div>
          <p class="hackText">Piyush</p> 
-         <p class="hackText"></p> 
          </div>
-         <div> <img src="css/img/sample2.jpeg" class="imageWin">
+         <div class="vertical"></div>
+  
+         <div class="main">
+         <img src="css/img/sample2.jpeg" style="filter:grayscale(100%)" class="imageWin">
+         <div class="over"><div class="inside"> <img src="css/img/three.png"  class="numbers"></div></div>
          <p class="hackText">Rakesh</p> 
          </div>
      </div>
@@ -92,7 +107,7 @@
           <img src="css/img/sample2.jpeg" class="famousWords" style="margin-top:8px;">
         </div>
         <div class="col-md-7 quotes">
-       <p class="content"> Dummy text is still used by millions of people and especially by those who are building website but a typist prefer to type rather than copy and paste</p><cite>Shreyansh jain</cite>
+       <i class="content"> Dummy text is still used by millions of people and especially by those who are building website but a typist prefer to type rather than copy and paste</i><br><cite>Shreyansh jain</cite>
        </div>
      </div>
 </div>
@@ -126,39 +141,24 @@
 </div>
 <hr>
 
+<h1 class="headMentors">Previous Years Capitals</h1>
 <div class="container">
-  <h1 class="headMentors">Previous Years Capitals</h1>
-  <div class="row">
-    <div class="col-md-3">
+   <div class="flex-container"> 
      <img src="css/img/naspers.png" class="naspers capitalImage">
-    </div>
-    <div class="col-md-3">
      <img src="css/img/five00.png" class="naspers capitalImage">
-    </div>
-    <div class="col-md-3">
      <img src="css/img/abrazz.jpeg" class="naspers capitalImage">
-    </div>
-    <div class="col-md-3">
      <img src="css/img/techstars.jpeg" class="naspers capitalImage">
-    </div>
+     <img src="css/img/naspers.png" class="naspers capitalImage">
+     <img src="css/img/early.jpeg" class="naspers capitalImage">
   </div>
 </div>
-<script> 
-$(document).ready(function(){
-    $(".loadMore").click(function(){
-       $(".hide").css({"display":"flex","transition":"display 2s"});
-       $(".loadMore").css("display","none");
-    });
-});
-</script>
-<script>
-$(document).ready(function(){
-    $(".ticket").click(function(){
-      $(".ticketButton").css({"text-align":"left"});
-      $(".ticketButton").css({"display":"inline"});
-      $(".details").css({"display":"inline"});
-    });
-});
-</script>
+
+<div class="footer">
+<footer>
+<div class="socialIcons facebook"><i class="fab fa-facebook"></i></div>
+<div class="socialIcons linkedin"><i class="fab fa-linkedin"></i></div>
+<div class="socialIcons instagram"><i class="fab fa-instagram"></i></div>
+</footer>
+</div>
 </body>
 </html>
