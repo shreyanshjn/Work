@@ -1,6 +1,6 @@
 # Project Description
 
-It is a webpage created using **bootstrap4** , **javascript** and of course **html** and **css**.
+The project is made using **bootstrap 4**.
 
 You can view this project on:-
 
